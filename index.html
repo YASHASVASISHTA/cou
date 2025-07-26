@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalesAlchemy Academy - Master Your Sales Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                SalesAlchemy Academy
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" id="homeBtn">
+                    <i class="fas fa-home"></i> Home
+                </button>
+                <button class="nav-btn" id="learningBtn">
+                    <i class="fas fa-book"></i> My Learning
+                </button>
+                <button class="nav-btn" id="progressBtn">
+                    <i class="fas fa-chart-line"></i> Progress
+                </button>
+                <button class="nav-btn" id="profileBtn">
+                    <i class="fas fa-user"></i> Profile
+                </button>
+                <button class="nav-btn" id="certificateBtn">
+                    <i class="fas fa-certificate"></i> Certificate
+                </button>
+            </nav>
+            <div class="user-info">
+                <span id="headerUserName">Guest</span>
+                <div class="progress-circle">
+                    <span id="headerProgress">0%</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Home View -->
+            <div id="homeView" class="view active">
+                <div class="hero-section">
+                    <h1>Master Sales in India</h1>
+                    <p>Comprehensive training program designed for Indian software sales professionals. Learn proven strategies, techniques, and best practices to excel in the competitive software sales market.</p>
+                    <button class="btn-primary" id="startLearningBtn">
+                        <i class="fas fa-play"></i> Start Learning
+                    </button>
+                </div>
+
+                <div class="features-section">
+                    <h2>What You'll Learn</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Software Sales Fundamentals</h3>
+                            <p>Understand what makes software sales unique, B2B vs B2C approaches, and SaaS sales cycles specific to the Indian market.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-search"></i>
+                            <h3>Prospecting & Lead Generation</h3>
+                            <p>Master LinkedIn outreach strategies, cold calling techniques, and lead qualification methods that work in India.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-database"></i>
+                            <h3>CRM Mastery</h3>
+                            <p>Learn CRM best practices, lead scoring, and pipeline management to maximize your sales efficiency.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Sales Negotiation & Closing</h3>
+                            <p>Handle objections effectively, master closing techniques, and negotiate deals that benefit both parties.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Building Sales Networks</h3>
+                            <p>Leverage referrals, build strategic partnerships, and create a network that generates consistent leads.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Pipeline Management</h3>
+                            <p>Master sales forecasting, pipeline analysis, and performance metrics to consistently hit your targets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <h2>Course Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Modules</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Chapters</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number"30+</div>
+                            <div class="stat-label">Quiz Questions</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3-6</div>
+                            <div class="stat-label">Hours Content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Dashboard View -->
+            <div id="learningView" class="view">
+                <div class="welcome-section">
+                    <h1>My Learning Dashboard</h1>
+                    <p>Continue your journey to becoming a software sales expert</p>
+                </div>
+                <div id="modulesGrid" class="modules-grid">
+                    <!-- Modules will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Progress View -->
+            <div id="progressView" class="view">
+                <div id="progressDashboard">
+                    <!-- Progress content will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Profile View -->
+            <div id="profileView" class="view">
+                <div class="profile-section">
+                    <h1>My Profile</h1>
+                    <div class="profile-content">
+                        <div class="profile-form">
+                            <h2>Personal Information</h2>
+                            <div class="form-group">
+                                <label for="profileName">Full Name</label>
+                                <input type="text" id="profileName" placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="profileEmail">Email</label>
+                                <input type="email" id="profileEmail" placeholder="Enter your email">
+                            </div>
+                            <button class="btn-primary" id="saveProfileBtn">Save Profile</button>
+                        </div>
+                        <div class="profile-stats">
+                            <h2>Learning Statistics</h2>
+                            <div id="profileStats" class="stats-container">
+                                <!-- Stats will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate View -->
+            <div id="certificateView" class="view">
+                <div id="certificateContainer">
+                    <!-- Certificate content will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Chapter View -->
+            <div id="chapterView" class="view">
+                <div class="chapter-header">
+                    <button class="back-btn" id="backToLearningBtn">
+                        <i class="fas fa-arrow-left"></i> Back to Learning
+                    </button>
+                    <div class="chapter-info">
+                        <h1 id="chapterTitle">Chapter Title</h1>
+                        <span id="chapterDuration" class="chapter-duration">Duration</span>
+                    </div>
+                </div>
+
+                <div class="chapter-content">
+                    <div class="content-sidebar">
+                        <div class="chapter-nav" id="chapterNav">
+                            <!-- Navigation will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="notes-section">
+                            <h3>My Notes</h3>
+                            <textarea id="notesArea" placeholder="Take notes while learning..."></textarea>
+                            <button class="btn-secondary" id="saveNotesBtn">Save Notes</button>
+                        </div>
+                    </div>
+
+                    <div class="content-main">
+                        <div id="lessonContent" class="lesson-content">
+                            <!-- Lesson content will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="content-actions">
+                            <button class="btn-secondary" id="bookmarkBtn">
+                                <i class="fas fa-bookmark"></i> Bookmark
+                            </button>
+                            <button class="btn-primary" id="takeQuizBtn">
+                                <i class="fas fa-question-circle"></i> Take Quiz
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="quizTitle">Chapter Quiz</h2>
+                <span class="close" id="closeQuizModal">&times;</span>
+            </div>
+            <div class="modal-body" id="quizModalBody">
+                <!-- Quiz content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
